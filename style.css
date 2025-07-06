@@ -1,0 +1,608 @@
+body, html {
+  height: 100%;
+  
+}
+/* Global box-sizing for consistency */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* General nav styling */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Link styling */
+nav a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-family: Arial, sans-serif;
+}
+
+/* Hover effect */
+nav a:hover {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    background-image: url("images/logo-tile-darkblue.png");
+    background-size: auto;
+    background-position: top left;
+    background-repeat: repeat;
+    color: white;
+    }
+
+.webdev-poster {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #111;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 2px solid #00bfff;
+}
+
+.logo h1 {
+  font-size: 2.5rem;
+  color: #00bfff;
+  text-shadow: 0 0 5px #00bfff;
+}
+
+.logo p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 15px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00bfff;
+}
+
+/* Sections */
+section {
+  margin: 40px 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-left: 5px solid #00bfff;
+  padding-left: 10px;
+  color: #00bfff;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 30px;
+}
+
+.project {
+  background: #1a1a1a;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 3px solid #00bfff;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.3);
+}
+
+blockquote {
+  font-style: italic;
+  margin: 20px 0;
+  border-left: 5px solid #00bfff;
+  padding-left: 15px;
+  color: #ddd;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.webdev-details {
+  background-color: #1a1a1a;
+  border-left: 5px solid #00bfff;
+  padding: 40px 30px;
+  margin: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.webdev-details h2 {
+  font-size: 2.2rem;
+  color: #00bfff;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 0 0 5px #00bfff;
+}
+
+.webdev-details h3 {
+  margin-top: 30px;
+  color: #00bfff;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #00bfff;
+  padding-bottom: 5px;
+}
+
+.webdev-details p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.webdev-details ul,
+.webdev-details ol {
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+.webdev-details ul li,
+.webdev-details ol li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #ccc;
+  position: relative;
+  padding-left: 20px;
+}
+
+.webdev-details ul li::before {
+  content: "🔹";
+  position: absolute;
+  left: 0;
+  color: #00bfff;
+}
+
+.webdev-details ol li::marker {
+  color: #00bfff;
+}
+
+.webdev-details strong {
+  color: #00bfff;
+}
+
+@media (max-width: 768px) {
+  .webdev-details {
+    padding: 25px 20px;
+  }
+
+  .webdev-details h2 {
+    font-size: 1.8rem;
+  }
+
+  .webdev-details h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Hosting Setup Section */
+.hosting-setup {
+  background-color: #1a1a1a;
+  border-left: 5px solid #00bfff;
+  padding: 40px 30px;
+  margin: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hosting-setup h2 {
+  font-size: 2.2rem;
+  color: #00bfff;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 0 0 5px #00bfff;
+}
+
+.hosting-setup h3 {
+  margin-top: 30px;
+  color: #00bfff;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #00bfff;
+  padding-bottom: 5px;
+}
+
+.hosting-setup p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.hosting-setup ul {
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+.hosting-setup ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #ccc;
+  position: relative;
+  padding-left: 25px;
+}
+
+.hosting-setup ul li::before {
+  content: \"🛰️\";
+  position: absolute;
+  left: 0;
+  color: #00bfff;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .hosting-setup {
+    padding: 25px 20px;
+  }
+
+  .hosting-setup h2 {
+    font-size: 1.8rem;
+  }
+
+  .hosting-setup h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Software & Hardware Upgrade Section */
+.upgrade-section {
+  background-color: #1a1a1a;
+  border-left: 5px solid #00bfff;
+  padding: 40px 30px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.2);
+  max-width: 900px;
+}
+
+.upgrade-section h2 {
+  font-size: 2.2rem;
+  color: #00bfff;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #00bfff;
+}
+
+.upgrade-section h3 {
+  margin-top: 30px;
+  color: #00bfff;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #00bfff;
+  padding-bottom: 5px;
+}
+
+.upgrade-section p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.upgrade-section ul {
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+.upgrade-section ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #ccc;
+  position: relative;
+  padding-left: 25px;
+}
+
+.upgrade-section ul li::before {
+  content: \"⚙️\";
+  position: absolute;
+  left: 0;
+  color: #00bfff;
+  font-size: 1.1rem;
+}
+
+.upgrade-section ol {
+  margin-left: 25px;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.upgrade-section ol li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.upgrade-section strong {
+  color: #00bfff;
+}
+
+@media (max-width: 768px) {
+  .upgrade-section {
+    padding: 25px 20px;
+  }
+
+  .upgrade-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .upgrade-section h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Pricing Table Styling */
+.pricing table {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  border-collapse: collapse;
+  background-color: #1a1a1a;
+  border-left: 5px solid #00bfff;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pricing th,
+.pricing td {
+  padding: 15px 20px;
+  text-align: left;
+  color: #f0f0f0;
+  font-size: 1rem;
+}
+
+.pricing thead th {
+  background-color: #00bfff;
+  color: #0a0a0a;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.pricing tbody tr:nth-child(even) {
+  background-color: #222;
+}
+
+.pricing tbody tr:hover {
+  background-color: #333;
+  transition: 0.3s ease;
+}
+
+.pricing tbody td:first-child::before {
+  content: "💻 ";
+}
+
+.pricing td:last-child {
+  text-align: center;
+  font-weight: bold;
+  color: #00bfff;
+}
+
+@media (max-width: 768px) {
+  .pricing table,
+  .pricing thead,
+  .pricing tbody,
+  .pricing th,
+  .pricing td,
+  .pricing tr {
+    display: block;
+    width: 100%;
+  }
+
+  .pricing thead {
+    display: none;
+  }
+
+  .pricing tbody tr {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00bfff;
+  }
+
+  .pricing td {
+    padding: 10px;
+    text-align: left;
+    position: relative;
+  }
+
+  .pricing td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    color: #00bfff;
+    margin-bottom: 5px;
+  }
+}
+
+/* Software & Hardware CTA Styling */
+.software-hardware a {
+  display: inline-block;
+  background-color: #00bfff;
+  color: #0a0a0a;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 20px 10px 0 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.4);
+}
+
+.software-hardware a:hover {
+  background-color: #009acf;
+  color: #ffffff;
+  box-shadow: 0 0 15px #00bfff;
+}
+
+/* Contact Form Styling */
+.contact form {
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.3);
+}
+
+.contact label {
+  color: #f0f0f0;
+  font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+  background: #0a0a0a;
+  color: #f0f0f0;
+  border: 1px solid #00bfff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  border-color: #00d5ff;
+  box-shadow: 0 0 8px #00d5ff;
+}
+
+.contact button {
+  background-color: #00bfff;
+  color: #0a0a0a;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(0, 191, 255, 0.5);
+}
+
+.contact button:hover {
+  background-color: #009acf;
+  color: #fff;
+  box-shadow: 0 0 16px #00bfff;
+}
+/* Contact Form Styling */
+.contact form {
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.3);
+}
+
+.contact label {
+  color: #f0f0f0;
+  font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+  background: #0a0a0a;
+  color: #f0f0f0;
+  border: 1px solid #00bfff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  border-color: #00d5ff;
+  box-shadow: 0 0 8px #00d5ff;
+}
+
+.contact button {
+  background-color: #00bfff;
+  color: #0a0a0a;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(0, 191, 255, 0.5);
+}
+
+.contact button:hover {
+  background-color: #009acf;
+  color: #fff;
+  box-shadow: 0 0 16px #00bfff;
+}
+
